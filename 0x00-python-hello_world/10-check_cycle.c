@@ -1,3 +1,8 @@
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
+#include "lists.h"
+
 /**
  * check_cycle - checks if a linked list has a cycle
  * @list: a pointer to the head of the linked list
