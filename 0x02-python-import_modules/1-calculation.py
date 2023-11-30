@@ -6,8 +6,8 @@ if __name__ == "__main__":
     x = 10
     y = 5
 
-    print("{} + {} = {}".format(x, y, add(x, y)))
-    print("{} - {} = {}".format(x, y, sub(x, y)))
-    print("{} * {} = {}".format(x, y, mul(x, y)))
-    print("{} / {} = {}".format(x, y, div(x, y)))
+    print("{:d} + {:d} = {:d}".format(x, y, add(x, y)))
+    print("{:d} - {:d} = {:d}".format(x, y, sub(x, y)))
+    print("{:d} * {:d} = {:d}".format(x, y, mul(x, y)))
+    print("{:d} / {:d} = {:d}".format(x, y, div(x, y)))
 
