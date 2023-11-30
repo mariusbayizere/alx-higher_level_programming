@@ -1,10 +1,16 @@
 #!/usr/bin/python3
+import sys
 
-if __name__ == "__main__":
-    import sys
+if __name__ != "__main__":
+    exit()
 
-    sum = 0
-    for x in range(len(sys.argv) - 1):
-        sum += int(sys.argv[x + 1])
-    print("{}".format(sum))
+argc = len(sys.argv) - 1
 
+x = 0
+sums = 0
+for arg in sys.argv:
+    if x != 0:
+        sums += int(arg)
+    else:
+        x += 1
+print("{:d}".format(sums))
