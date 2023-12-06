@@ -5,5 +5,4 @@ def square_matrix_simple(matrix=[]):
     for z in range(len(matrix)):
         new_matrix[z] = list(map(lambda x: x**2, matrix[z]))
 
-    return (new_matrix)
-
+    return new_matrix
