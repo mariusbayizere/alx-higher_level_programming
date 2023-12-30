@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-token="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"
+token="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"
 
 git add . | git commit -m "0x06. Python - Classes and Objects" | git push
 
