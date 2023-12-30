@@ -3,6 +3,6 @@
 
 class Square:
     """
-    A class representing a square class are empty.
+    A class representing a square class is empty.
     """
     pass
