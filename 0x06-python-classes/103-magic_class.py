@@ -7,7 +7,7 @@ import dis
 class MagicClass:
     """circle"""
     def __init__(self, radius=0):
-        """initialize magic class
+        """initialize magic classi
         Arg:
         radius: must be integer and float in magic class
         """
