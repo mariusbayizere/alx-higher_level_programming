@@ -72,5 +72,5 @@ class Rectangle:
         return (newlist)
 
     def __del__(self):
-        """Print the message for delete rectangle"""
+        """print or display message when delete rectangle."""
         print("Bye rectangle...")
