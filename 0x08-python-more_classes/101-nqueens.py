@@ -1,8 +1,5 @@
 #!/usr/bin/python3
 """Solves the N-queens puzzle.
-
-Determines all possible solutions to placing N
-N non-attacking queens on an NxN chessboard.
 """
 import sys
 
@@ -51,18 +48,18 @@ def solve_nqueens(chessboard, row, queens, solutions):
     return solutions
 
 
-def mark_positions(chessboard, row, col):
+def mark_positions(chessboard, row, xcolx):
     """Mark out spots on a chessboard.
     """
-    for c in range(col + 1, len(chessboard)):
+    for c in range(xcolx + 1, len(chessboard)):
         chessboard[row][c] = "x"
-    for c in range(col - 1, -1, -1):
+    for c in range(xcolx - 1, -1, -1):
         chessboard[row][c] = "x"
     for r in range(row + 1, len(chessboard)):
-        chessboard[r][col] = "x"
+        chessboard[r][xcolx] = "x"
     for r in range(row - 1, -1, -1):
-        chessboard[r][col] = "x"
-    c = col + 1
+        chessboard[r][xcolx] = "x"
+    c = xcolx + 1
     for r in range(row + 1, len(chessboard)):
         if c >= len(chessboard):
             break
@@ -74,13 +71,13 @@ def mark_positions(chessboard, row, col):
             break
         chessboard[r][c]
         c -= 1
-    c = col + 1
+    c = xcolx + 1
     for r in range(row - 1, -1, -1):
         if c >= len(chessboard):
             break
         chessboard[r][c] = "x"
         c += 1
-    c = col - 1
+    c = xcolx - 1
     for r in range(row + 1, len(chessboard)):
         if c < 0:
             break
@@ -101,5 +98,5 @@ if __name__ == "__main__":
 
     chessboard = chessboard_mtn(int(sys.argv[1]))
     solutions = solve_nqueens(chessboard, 0, 0, [])
-    for sol in solutions:
-        print(sol)
+    for xx in solutions:
+        print(xx)
