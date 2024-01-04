@@ -45,18 +45,18 @@ class Rectangle:
 
     def area(self):
         """To calculate the area of Rectangle"""
-        return self.__height * self.__width
+        return self.__width * self.__height
 
     def perimeter(self):
         """Return the area of parameter of Rectangle"""
-        if self.__height == 0 or self.width == 0:
+        if self.__width == 0 or self.height == 0:
             return 0
         else:
-            return ((self.__height * 2) + (self.__width * 2))
+            return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """Function that has responsible for printing the rectangle"""
-        if self.__height == 0 or self.__width == 0:
+        if self.__width == 0 or self.__height == 0:
             return " "
         newlist = []
         for x in range(self.__height):
