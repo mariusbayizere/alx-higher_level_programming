@@ -55,12 +55,16 @@ class Rectangle:
             return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Function that has responsible for printing the rectangle"""
+        """Function that print representation of the Rectangle.
+
+        using the # character.
+        """
         if self.__width == 0 or self.__height == 0:
-            return " "
+            return ("")
+
         newlist = []
         for x in range(self.__height):
-            [newlist.append('#') for j in range(self.__width)]
+            [newlist.append('#') for y in range(self.__width)]
             if x != self.__height - 1:
                 newlist.append("\n")
         return ("".join(newlist))
