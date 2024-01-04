@@ -101,6 +101,6 @@ class Rectangle:
     def square(cls, size=0):
         """return new rectangle with equal side
         args:
-            size :receving size which is width and height
+            size : receiving size which is width and height
         """
         return (cls(size, size))
