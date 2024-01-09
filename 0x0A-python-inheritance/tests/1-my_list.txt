@@ -1,0 +1,56 @@
+Test for 1-my_list.py
+
+step 1 . import this file 1-my_list 
+>>> MyList = __import__('1-my_list').MyList
+
+step 2
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+step 3 : when not giving the list
+>>>MyList = __import__('1-my_list').MyList
+>>>list1.print_sorted()
+Traceback (most recent call last):
+  File "./2-main.py", line 3, in <module>
+    list1.print_sorted()
+NameError: name 'list1' is not defined
+
+
+step 4: when give the list
+
+>>> benz = [10, 3, 60, 7, 4]
+>>> my_list = MyList(benz)
+>>> my_list.print_sorted()
+[3, 4, 7, 10, 60]
+
+
+step 5: when give the empty list
+
+>>> benz = []
+>>> my_list = MyList(benz)
+>>> my_list.print_sorted()
+[]
+
+step 6: when give the list same number
+>>>benz = MyList()
+>>>benz.append(4)
+>>>benz.append(2)
+>>>benz.append(2)
+>>>benz.append(2)
+>>>benz.append(2)
+>>>benz.append(4)
+>>>benz.append(5)
+>>>benz.print_sorted()
+[2, 2, 2, 2, 4, 4, 5]
+                    
+
