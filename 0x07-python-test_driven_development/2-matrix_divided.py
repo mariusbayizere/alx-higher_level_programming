@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""this module are contain function that will divide matrix"""
 
 
 def matrix_divided(matrix, div):
