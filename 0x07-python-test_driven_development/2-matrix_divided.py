@@ -4,8 +4,16 @@
 
 def matrix_divided(matrix, div):
     """
-    Divides  elements int  matrix, elements are
-        int or float type
+    Divide all elements of a matrix by a given divisor.
+
+    Parameters:
+    - matrix (list of lists): The matrix to be divided.
+    - div (int or float): The divisor by which each element
+    of the matrix will be divided.
+
+    Returns:
+    list of lists: A new matrix containing the results of
+    the division operation.
     """
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
