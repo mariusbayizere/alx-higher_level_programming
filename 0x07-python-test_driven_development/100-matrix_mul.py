@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+this module contin function that multpuy two matrix without using
+numpy
+"""
 
 
 def matrix_mul(m_a, m_b):
