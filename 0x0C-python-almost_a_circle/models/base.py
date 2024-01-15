@@ -108,15 +108,15 @@ class Base:
     @staticmethod
     def draw(list_rectangles, list_squares):
         """
-        function Draw rectangles and squares on a canvas.
+        Draw rectangles and squares on a canvas.
 
-        Parameters:
-            list_rectangles (list): A list of Rectangle objects to be drawn.
-            list_squares (list): A list of Square objects to be drawn.
+        Args:
+            list_rectangles (list): A list of rectangle objects to be drawn.
+            list_squares (list): A list of square objects to be drawn.
 
         Returns:
             None
-            """
+        """
         pani = turtle.Turtle()
         pani.screen.bgcolor("#b7312c")
         pani.pensize(3)
@@ -163,10 +163,15 @@ class Base:
 
     @classmethod
     def save_to_file_csv(cls, list_objs):
-        """Write the CSV serialization of a list of objects to a file.
+        """
+        Save a list of objects to a CSV file.
 
         Args:
-            list_objs (list): A list of inherited Base instances.
+            cls (type): The class itself.
+            list_objs (list): A list of objects to be saved to the CSV file.
+
+        Returns:
+            None
         """
         filename = cls.__name__ + ".csv"
         with open(filename, "w", newline="") as csvfile:
