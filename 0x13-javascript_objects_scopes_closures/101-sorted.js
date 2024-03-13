@@ -8,7 +8,7 @@ const newDict = {};
 for (const y in bisuma) {
   const list = [];
   for (const x in jackson) {
-    if (jackson[x][1] === bisuma[j]) {
+    if (jackson[x][1] === bisuma[y]) {
       list.unshift(jackson[x][0]);
     }
   }

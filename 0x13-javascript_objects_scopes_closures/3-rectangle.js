@@ -9,7 +9,7 @@ class Rectangle {
 
   print () {
     for (let y = 0; y < this.height; y++) {
-      let s = '';
+      let g = '';
       for (let p = 0; p < this.width; p++) {
         g += 'X';
       }
