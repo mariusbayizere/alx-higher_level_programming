@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 script that takes your GitHub credentials
-(username and password) and uses 
+(username and password) and uses
 """
 from requests import get, auth
 import sys
