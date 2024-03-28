@@ -8,11 +8,12 @@ import requests
 
 
 if __name__ == "__main__":
-    letter = "" if len(argv) == 1 else argv[1]
-    req = requests.post("http://0.0.0.0:5000/search_user", {"q": letter})
+    france = "" if len(sys.argv) == 1 else sys.argv[1]
+    painpar = {"q": france}
 
+    r = requests.post("http://0.0.0.0:5000/search_user", data=painpar)
     try:
-        response = req.json()
+        response = r.json()
         if response == {}:
             print("No result")
         else:
