@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 function the will display the lists all State objects
 that contain the letter
 """
