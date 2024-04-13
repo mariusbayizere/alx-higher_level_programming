@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" script 14-model_city_fetch_by_state.py that prints all City objects from the database 
+"""
+script 14-model_city_fetch_by_state.py that prints
+all City objects from the database
 """
 import sys
 from model_state import Base, State
@@ -15,5 +17,5 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     for bigg in (session.query(State.name, City.id, City.name)
-                     .filter(State.id == City.state_id)):
+                        .filter(State.id == City.state_id)):
         print(bigg[0] + ": (" + str(bigg[1]) + ") " + bigg[2])
