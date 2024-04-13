@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" script that lists all State objects, and corresponding City objects, contained in the database 
+"""
+script that lists all State objects, and corresponding
+City objects, contained in the database
 """
 import sys
 from relationship_state import Base, State
