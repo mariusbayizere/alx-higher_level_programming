@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""write a script that takes in arguments and displays all values in the states"""
+"""
+write a script that takes in arguments and displays all
+values in the states
+"""
 import MySQLdb
 import sys
 
